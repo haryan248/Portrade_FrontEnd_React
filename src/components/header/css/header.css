@@ -1,0 +1,24 @@
+header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header * {
+  margin-right: 10px;
+}
+
+nav {
+  display: flex;
+}
+
+.search-wrap {
+  display: flex;
+}
+
+.search-wrap input {
+    height: 10px;
+}
