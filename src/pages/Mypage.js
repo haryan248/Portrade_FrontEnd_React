@@ -1,11 +1,11 @@
 import React from "react";
 
-const More = () => {
+const Mypage = () => {
     return (
         <div style={{width: "100%", textAlign: "center"}}>
-            <h1>More</h1>
+            <h1>Mypage</h1>
         </div>
     );
 };
 
-export default More;
+export default Mypage;

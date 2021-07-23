@@ -1,11 +1,11 @@
 import React from "react";
 
-const Enterprise = () => {
+const Notice = () => {
     return (
         <div style={{ width: "100%", textAlign: "center" }}>
-            <h1>Enterprise</h1>
+            <h1>Notice</h1>
         </div>
     );
 };
 
-export default Enterprise;
+export default Notice;
