@@ -11,8 +11,16 @@ header * {
   margin-right: 10px;
 }
 
-nav {
+.nav-bar {
   display: flex;
+  font-size: 12px;
+  padding: 3rem;
+  color: #707070;
+}
+
+.logo {
+  font-size: 21px;
+  color: #FFD448;
 }
 
 .search-wrap {
