@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { Error, Home, Introduce, Login, Mypage, Help, Portfolio, Register, Suggestion } from "./pages";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 import "./css/app.css";
 
@@ -21,6 +22,8 @@ const App = () => {
                 <Route exact path="/introduce" component={Introduce} />
                 <Route component={Error} />
             </Switch>
+
+            <Footer />
         </>
     );
 };
