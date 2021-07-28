@@ -17,9 +17,10 @@ const Header = () => {
             </div>
 
             <nav className="nav-bar">
-                <Link to="/portfolio">포트폴리오 등록</Link>
+                <Link to="/introduce">사이트 소개</Link>
+                <Link to="/portfolio">포트폴리오</Link>
                 <Link to="/suggestion">추천 기업</Link>
-                <Link to="/notice">공지사항 및 문의</Link>
+                <Link to="/help">고객센터</Link>
             </nav>
 
             <div className="search-wrap">
