@@ -1,7 +1,12 @@
+.home-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
 .slide-box {
     width: 100%;
     height: 450px;
-    background: #B4B4B487 0% 0% no-repeat padding-box;
+    background: #cccccc 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
@@ -9,17 +14,20 @@
     margin: 0 auto;
     width: 70%;
     height: 150px;
-    background: #B4B4B487 0% 0% no-repeat padding-box;
+    background: #f3f3f3 0% 0% no-repeat padding-box;
     opacity: 1;
+    margin-top: 60px;
 }
 
 .about-box {
     margin: 0 auto;
+    margin-top: 113px;
     width: 70%;
-    height: 300px;
     opacity: 1;
     text-align: left;
     line-height: 1;
+    display: flex;
+    color: #707070;
 }
 
 .about-box > div {
@@ -28,37 +36,46 @@
     font-size: 30px;
 }
 
-.about-yellow-box{
+.about-yellow-box {
     align-items: right;
-    top: 650px;
-    left: 485px;
-    width: 500px;
-    height: 300px;
-    background-color: #FFD448;
+    width: 550px;
+    height: 353px;
+    background-color: #f3f3f3;
+}
+
+.about-content {
+    color: #000000;
+    letter-spacing: 0px;
+}
+
+.about {
+    font: normal normal normal 25px/70px AppleSDGothicNeoEB00;
+}
+
+.about-title {
+    font: normal normal normal 40px/38px AppleSDGothicNeoH00;
+}
+
+.about-desc {
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+}
+
+.detail-btn {
+    margin: auto;
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    background: #005fff 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-box {
-    color:#707070;
-}
-
-.content-yellow-box{
-    margin: auto;
-    margin-bottom: 60px;
-    top: 650px;
-    left: 485px;
-    width: 70%;
-    height: 450px;
-    background-color: #FFD448;
-}
-
-.content-text {
-    display: flex;
-    justify-content: center;
-    color:#707070;
-}
-
-.slogan-box {
-    color:#707070;
+    color: #707070;
+    margin-top: 220px;
 }
 .slogan-yellow {
     display: flex;
@@ -66,23 +83,96 @@
 }
 .slogan-yellow-box {
     margin: 20px;
-    width: 300px;
-    height: 700px;
-    background-color: #FFD448;
+    width: 400px;
+    height: 500px;
+    background-color: #f3f3f3;
+    border-radius: 25px;
 }
 
+.register-button {
+    margin-top: 64px;
+    font: normal normal normal 20px/38px AppleSDGothicNeoB00;
+    color: #005fff;
+}
+
+.adv-content {
+    margin: 0 auto;
+    width: 70%;
+    opacity: 1;
+    text-align: left;
+    line-height: 1;
+    display: flex;
+    color: #707070;
+    margin-top: 220px;
+}
+
+.adv-content > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.first-adv,
+.second-adv {
+    color: #000000;
+    letter-spacing: 0px;
+}
+
+.about {
+    font: normal normal normal 25px/70px AppleSDGothicNeoEB00;
+}
+
+.portfolioEx-title {
+    font: normal normal normal 40px/55px AppleSDGothicNeoEB00;
+}
+
+.portfolioEx-desc {
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+}
+
+.portfolio-content {
+    margin-top: 134px;
+}
+.portfolio-nav {
+    color: #005fff;
+}
+.portfolio-list {
+    display: flex;
+}
+.portfolio {
+    margin: 40px;
+}
+.portfolio-thumbnail {
+    width: 500px;
+    height: 375px;
+    background: #b3b3b3 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+}
 .start-box {
-    color:#707070;
+    background-color: #f3f3f3;
+    color: #707070;
     margin-bottom: 60px;
+    padding: 100px;
+    margin-top: 100px;
+}
+.start-box .description {
+    margin-bottom: 30px;
+    font: normal normal normal 40px/55px AppleSDGothicNeoM00;
 }
 
 .start-btn {
     margin: auto;
-    margin-bottom: 300px;
-    top: 4735px;
     left: 785px;
     width: 350px;
     height: 60px;
-    background: #FFC147 0% 0% no-repeat padding-box;
+    background: #005fff 0% 0% no-repeat padding-box;
     border-radius: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    color: #005fff;
 }

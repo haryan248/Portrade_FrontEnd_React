@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./css/header.css";
 
 const Header = () => {
+    // eslint-disable-next-line
     const [isLogin, setIsLogin] = useState(false);
     /**
      * TBD ver.2
@@ -24,13 +25,13 @@ const Header = () => {
             </nav>
 
             <div className="search-wrap">
-                <input type="text"/>
+                <input type="text" />
                 <button>search</button>
             </div>
 
             <div className="nav-bar">
-                {isLogin ? (<div>로그아웃</div>) : (<Link to="/login">로그인</Link>)}
-                {isLogin ? (<Link to="/mypage">마이페이지</Link>) : (<Link to="/register">회원가입</Link>)}
+                {isLogin ? <div>로그아웃</div> : <Link to="/login">로그인</Link>}
+                {isLogin ? <Link to="/mypage">마이페이지</Link> : <Link to="/register">회원가입</Link>}
             </div>
         </header>
     );
