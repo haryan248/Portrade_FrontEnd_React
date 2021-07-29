@@ -1,9 +1,38 @@
-html, body {
-  margin: 0;
-  padding: 0;
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
+    font-family: "AppleSDGothicNeoB00";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoEB.ttf");
+    font-family: "AppleSDGothicNeoEB00";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoH.ttf");
+    font-family: "AppleSDGothicNeoH00";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM00";
+}
+
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoR.ttf");
+    font-family: "AppleSDGothicNeoR00";
+}
+@font-face {
+    src: url("../fonts/AppleSDGothicNeoSB.ttf");
+    font-family: "AppleSDGothicNeoSB00";
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration-line: none;
+    color: inherit;
+    text-decoration-line: none;
 }
