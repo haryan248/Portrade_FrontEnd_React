@@ -12,9 +12,8 @@ header {
 }
 
 header * {
-    margin-right: 10px;
+    margin-right: 30px;
 }
-
 .nav-bar {
     display: flex;
     font: normal normal normal 15px/21px AppleSDGothicNeoM00;
@@ -29,6 +28,7 @@ header * {
 }
 
 .search-wrap {
+    margin-left: 200px;
     display: flex;
 }
 
