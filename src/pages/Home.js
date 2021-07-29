@@ -23,11 +23,13 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="content-box">
-                <div style={{ fontSize: "40px" }}>How To?</div>
-                <div style={{ fontSize: "15px" }}>포트폴리오 등록은 어떻게 진행되나요?</div>
-                <div>포트레이트는 파일 업로드를 통하여 간편한 등록이 가능합니다. </div>
-                <div>여러분의 개성넘치는 포트폴리오를 업로드 해보세요.</div>
+            <div className="howTo-box">
+                <div className="howTo-title">How To?</div>
+                <div className="howTo-desc">포트폴리오 등록은 어떻게 진행되나요?</div>
+                <div className="howTo-detail">
+                    <div>포트레이트는 파일 업로드를 통하여 간편한 등록이 가능합니다. </div>
+                    <div>여러분의 개성넘치는 포트폴리오를 업로드 해보세요.</div>
+                </div>
             </div>
 
             <div className="slogan-yellow">
