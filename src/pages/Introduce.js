@@ -65,6 +65,18 @@ const Introduce = () => {
                 <div className="developer"></div>
                 <div className="developer"></div>
             </div>
+
+            <div className="contact-box">
+                <div className="contact-content">
+                    <div className="contact-nav">contact</div>
+                </div>
+                <div className="contact-content">
+                    <div className="contact-detail">
+                        <div>여러분들과 소통을 하며 성장하는 포트레이트가 되겠습니다.여러분들과 소통을 하며 성장하는 포트레이트가 되겠습니다.</div>
+                        <div>포트레이트에 대해 더 자세히 알아보세요. EMAIL 문의 portrade@gmail.com</div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
