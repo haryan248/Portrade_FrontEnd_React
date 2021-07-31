@@ -21,6 +21,10 @@ header * {
     color: #000000;
 }
 
+.nav-bar a {
+    line-height: 23px;
+}
+
 .logo {
     /* font-size: 21px; */
     font: 35px;
@@ -35,4 +39,22 @@ header * {
 
 .search-wrap input {
     height: 10px;
+}
+
+.nav-bar button div {
+    display: none;
+}
+
+.nav-bar button span {
+    color: #000000;
+    font: normal normal normal 15px/21px AppleSDGothicNeoM00;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.google-logout {
+    box-shadow: none !important;
+    text-align: center;
+    outline: none;
+    width: fit-content;
 }

@@ -62,6 +62,8 @@ const Login = ({ history }) => {
                                 onSuccess={(res) => onSuccessGoogle(res)}
                                 onFailure={(err) => onFailureGoogle(err)}
                                 cookiePolicy="none"
+                                className="google-login"
+                                buttonText="Google 계정으로 로그인"
                             />
                         </div>
                         <div className="login-or-text">or</div>
