@@ -1,14 +1,17 @@
 p {
     margin: 0px;
 }
-
+.login-container {
+    width: 100%;
+    text-align: center;
+}
 .left-text {
     text-align: left;
 }
 
 .logo-text {
     font: normal normal normal 50px/72px AppleSDGothicNeoEB00;
-    color: #0ac3c8;
+    color: #01c1c6;
     margin-bottom: 70px;
 }
 
@@ -22,7 +25,7 @@ p {
     align-items: center;
     width: 90vh;
     height: 100vh;
-    background-color: #0000004d;
+    background-color: #0000006b;
 }
 
 .intro-text {

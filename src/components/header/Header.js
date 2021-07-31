@@ -30,6 +30,8 @@ const Header = () => {
             </div>
 
             <div className="nav-bar">
+                <button onClick={() => setIsLogin(!isLogin)}>로그인 토글</button>
+
                 {isLogin ? <div>로그아웃</div> : <Link to="/login">로그인</Link>}
                 {isLogin ? <Link to="/mypage">마이페이지</Link> : <Link to="/register">회원가입</Link>}
             </div>
