@@ -1,16 +1,15 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { Error, Home, Introduce, Login, Mypage, Help, Portfolio, Register, Suggestion } from "./pages";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
 import "./css/app.css";
 
-const App = () => {
+const App = (props) => {
     return (
         <>
-            <Header />
-
+            {props.location.pathname !== "/login" && <Header />}
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/portfolio" component={Portfolio} />
@@ -23,9 +22,9 @@ const App = () => {
                 <Route component={Error} />
             </Switch>
 
-            <Footer />
+            {props.location.pathname !== "/login" && <Footer />}
         </>
     );
 };
 
-export default App;
+export default withRouter(App);
