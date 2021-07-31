@@ -2,30 +2,159 @@ p {
     margin: 0px;
 }
 
-.square {
+.left-text {
+    text-align: left;
+}
+
+.logo-text {
+    font: normal normal normal 50px/72px AppleSDGothicNeoEB00;
+    color: #0ac3c8;
+    margin-bottom: 70px;
+}
+
+.login-box {
+    display: flex;
+}
+
+.left-box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90vh;
     height: 100vh;
-    background-color: #0000004D;
+    background-color: #0000004d;
 }
 
 .intro-text {
-    text-align: left;
+    font: normal normal normal 35px/50px AppleSDGothicNeoSB00;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.slogan-text {
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.more-info-text {
+    font: normal normal normal 13px/45px AppleSDGothicNeoM00;
+    color: #fff;
+    margin-bottom: 50px;
 }
 
 .btn-register {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #005FFF;
+    color: #487498;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
     top: 719px;
     left: 230px;
     width: 451px;
     height: 45px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 5px #00000033;
     border-radius: 10px;
     opacity: 1;
+}
+
+.right-box {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content {
+    text-align: left;
+}
+
+.login-text {
+    color: #487498;
+    font: normal normal normal 40px/57px AppleSDGothicNeoEB00;
+}
+
+.login-intro {
+    font: normal normal normal 15px/25px AppleSDGothicNeoR00;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.btn-oauth {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    text-align: center;
+    font: normal normal normal 15px/38px AppleSDGothicNeoSB00;
+    color: #999999;
+}
+
+.login-or-text {
+    margin: 18px 0px 0px 0px;
+    text-align: center;
+    font: normal normal normal 15px/38px AppleSDGothicNeoR00;
+    letter-spacing: 0px;
+    color: #c6c6c6;
+}
+
+.login-wrap {
+    margin: auto;
+}
+
+.input-text {
+    text-align: left;
+    font: normal normal normal 13px/38px AppleSDGothicNeoR00;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+.login-input {
+    top: 512px;
+    left: 1165px;
+    width: 440px;
+    height: 45px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+}
+
+.btn-login {
+    margin-top: 15px;
+    margin-bottom: 17px;
+    top: 669px;
+    left: 1165px;
+    width: 439px;
+    height: 45px;
+    background: #22334d 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #00000033;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+    color: #ffffff;
+}
+
+.btn-option {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.save-info {
+    font: normal normal normal 12px/38px AppleSDGothicNeoR00;
+    color: #000000;
+}
+
+.find-passwd {
+    font: normal normal normal 13px/38px AppleSDGothicNeoB00;
+    color: #0ac3c8;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12px;
 }
