@@ -1,8 +1,24 @@
 import React from "react";
-import "./css/login.css";
 import { Link } from "react-router-dom";
+import GoogleLogin from "react-google-login";
+import ActionCreators from "../_actions";
+import { useDispatch } from "react-redux";
 
-const Login = () => {
+import "./css/login.css";
+
+const Login = ({ history }) => {
+    const dispatch = useDispatch();
+
+    const onSuccessGoogle = (res) => {
+        dispatch(ActionCreators.login(res.isSignedIn(), res.Zb.access_token, res.profileObj.email));
+        window.sessionStorage.setItem("access_token", res.Zb.access_token);
+        history.replace("/");
+    }
+
+    const onFailureGoogle = (err) => {
+        console.log(err);
+    }
+
     return (
         <div className="login-container">
             <div className="login-box">
@@ -40,7 +56,14 @@ const Login = () => {
                             <div>서비스를 간편하게 이용하실 수 있습니다.</div>
                         </div>
 
-                        <div className="btn-oauth">Google 계정으로 로그인</div>
+                        <div className="btn-oauth">
+                            <GoogleLogin
+                                clientId="988674118538-gog8quj6fimubp2b8dc6jhecui5e88cd.apps.googleusercontent.com" //앱키 추후 변경
+                                onSuccess={res => onSuccessGoogle(res)}
+                                onFailure={err => onFailureGoogle(err)}
+                                cookiePolicy="none"
+                            />
+                        </div>
                         <div className="login-or-text">or</div>
 
                         <div className="input-text">
