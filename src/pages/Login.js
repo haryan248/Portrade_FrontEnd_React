@@ -20,12 +20,13 @@ const Login = ({ history }) => {
     };
 
     return (
-        <div style={{ width: "100%", textAlign: "center" }}>
-            <h1>Login</h1>
+        <div className="login-container">
             <div className="login-box">
                 <div className="left-box">
                     <div className="left-text">
-                        <p className="logo-text">PORTRADE</p>
+                        <Link to="/">
+                            <p className="logo-text">PORTRADE</p>
+                        </Link>
                         <div className="intro-text">
                             <p>PORTRADE와 함께</p>
                             <p>취업을 향한 여정을 시작해보세요.</p>

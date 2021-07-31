@@ -47,7 +47,7 @@ const Help = () => {
             </div>
             <div className="inquiry-box">
                 <div className="description">
-                    <div>원하는 답변을 찾기 어려우신가요?</div>
+                    <div className="sub-desc">원하는 답변을 찾기 어려우신가요?</div>
                     <div>링커벨에게 직접 문의 해주세요.</div>
                     <div>최대한 빠르게 답변드리도록 하겠습니다!</div>
                 </div>

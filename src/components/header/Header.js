@@ -1,31 +1,31 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ActionCreators from "../../_actions";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { GoogleLogout } from "react-google-login";
 
 import "./css/header.css";
 
 const Header = () => {
     const dispatch = useDispatch();
-    const isLogin = useSelector(state => state.login.isLogin);
+    const isLogin = useSelector((state) => state.login.isLogin);
     const sessionStoragetokenCheck = window.sessionStorage.getItem("access_token");
 
     useEffect(() => {
-        if(sessionStoragetokenCheck){
+        if (sessionStoragetokenCheck) {
             dispatch(ActionCreators.login());
-        }else{
+        } else {
             dispatch(ActionCreators.logout());
         }
     }, [sessionStoragetokenCheck, dispatch]);
 
     const onLogoutSuccess = () => {
-        if(window.confirm("로그아웃 하시겠습니까?")){
+        if (window.confirm("로그아웃 하시겠습니까?")) {
             window.sessionStorage.clear();
             dispatch(ActionCreators.logout());
             window.location.href = "/";
         }
-    }
+    };
 
     return (
         <header>
@@ -46,15 +46,7 @@ const Header = () => {
             </div>
 
             <div className="nav-bar">
-                {isLogin ?
-                        <GoogleLogout
-                            buttonText="로그아웃"
-                            onLogoutSuccess={() => onLogoutSuccess()}
-                            clientId="988674118538-gog8quj6fimubp2b8dc6jhecui5e88cd.apps.googleusercontent.com"
-                        />
-                    :
-                        <Link to="/login">로그인</Link>
-                }
+                {isLogin ? <GoogleLogout buttonText="로그아웃" onLogoutSuccess={() => onLogoutSuccess()} clientId="988674118538-gog8quj6fimubp2b8dc6jhecui5e88cd.apps.googleusercontent.com" /> : <Link to="/login">로그인</Link>}
                 {isLogin ? <Link to="/mypage">마이페이지</Link> : <Link to="/register">회원가입</Link>}
             </div>
         </header>

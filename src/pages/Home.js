@@ -1,13 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/home.css";
 
 const Home = () => {
+    const [buttons, setNames] = useState([
+        { id: 1, text: "포트폴리오 등록하기" },
+        { id: 2, text: "분야별 포트폴리오" },
+        { id: 3, text: "추천 포트폴리오" },
+        { id: 4, text: "이력서 등록하기" },
+        { id: 5, text: "이력서 등록하기" },
+        { id: 6, text: "이력서 등록하기" },
+    ]);
+    const homeButtonList = buttons.map((button) => (
+        <div className="home-button" key={button.id}>
+            {button.text}
+        </div>
+    ));
     return (
         <div className="home-container">
             <div className="slide-box">슬라이드</div>
+            <div className="homeTop-button">{homeButtonList}</div>
+            <div className="corporate">
+                <div className="announcement"></div>
+                <div className="announcement"></div>
+                <div className="announcement"></div>
+                <div className="announcement"></div>
+            </div>
 
-            <div className="banner-box">배너</div>
-
+            <div>
+                코로나 19로 인해, 더욱 치열해진 취업 난 속에서 청년을 도와주는 사이트 입니다. 포트폴리오에는 개인의 개성과 열정이 담겨져 있습니다. 이런 개성이 담긴 작품은 한 사람을 대변합니다. 포트레이트는 여러분의 개성이 담긴 포트폴리오를
+                화가의 혼이 담긴 초상화처럼 여깁니다. 여러분의 소중한 초상화를 기업에게 전달해드리겠습니다.
+            </div>
             <div className="about-box">
                 <div className="about-yellow-box"></div>
 
@@ -15,7 +37,7 @@ const Home = () => {
                     <div className="about">ABOUT</div>
                     <div className="about-title">PORTRADE</div>
                     <div className="about-desc">
-                        <div> 'PORTFOLIO' + 'TRADE'</div>
+                        <div className="about-subtitle"> 'PORTFOLIO' + 'TRADE'</div>
                         <div> 포트레이트는 '포트폴리오(Portfolio)'와 '트레이드(Trade)'를 결합한 합성어 입니다.</div>
                         <div> 포트폴리오는 개인마다 다른 이야기를 가지고 있습니다. 각자의 개성은 작성자의 얼굴을 대변하기도 합니다.</div>
                     </div>
@@ -93,7 +115,7 @@ const Home = () => {
                     <div>포트레이드는 여러분과 함께 성장합니다.</div>
                 </div>
                 <div className="start-btn">
-                    <div>등록하기</div>
+                    <div>지금 시작하기</div>
                 </div>
             </div>
         </div>

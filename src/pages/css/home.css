@@ -1,22 +1,46 @@
 .home-container {
     width: 100%;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .slide-box {
     width: 100%;
     height: 450px;
-    background: #cccccc 0% 0% no-repeat padding-box;
+    background: #487498 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-
-.banner-box {
-    margin: 0 auto;
-    width: 70%;
-    height: 150px;
-    background: #f3f3f3 0% 0% no-repeat padding-box;
-    opacity: 1;
+.homeTop-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.home-button {
+    width: 190px;
+    height: 45px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border: 1px solid #22334d;
+    font: normal normal normal 15px/45px AppleSDGothicNeoB00;
+    color: #22334d;
+    border-radius: 25px;
+    margin-right: 40px;
+}
+.home-button:hover {
+    background: #22334d 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    color: #ffffff;
+}
+.corporate {
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
+}
+.announcement {
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+    background: #f3f3f3 0% 0% no-repeat padding-box;
+    border-radius: 25px;
 }
 
 .about-box {
@@ -53,21 +77,26 @@
 }
 
 .about-title {
+    color: #0ac3c8;
     font: normal normal normal 40px/38px AppleSDGothicNeoH00;
 }
 
 .about-desc {
     font: normal normal normal 15px/25px AppleSDGothicNeoM00;
 }
-
+.about-subtitle {
+    font: normal normal normal 25px/38px AppleSDGothicNeoM00;
+}
 .detail-btn {
     margin: auto;
     width: 170px;
     height: 45px;
-    font-size: 15px;
-    background: #005fff 0% 0% no-repeat padding-box;
-    border-radius: 50px;
-    color: #ffffff;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    border: 1px solid #22334d;
+    border-radius: 23px;
+    color: #22334d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,9 +129,18 @@
 }
 
 .register-button {
+    margin: 0 auto;
     margin-top: 64px;
-    font: normal normal normal 20px/38px AppleSDGothicNeoB00;
-    color: #005fff;
+    background: #22334d 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000029;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+    width: 190px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    border-radius: 23px;
+    text-align: center;
+    letter-spacing: 0px;
 }
 
 .adv-content {
@@ -145,19 +183,18 @@
 }
 .portfolio-nav {
     font: normal normal normal 20px/38px AppleSDGothicNeoB00;
-    color: #005fff;
 }
 .portfolio-list {
     display: flex;
 }
 .portfolio {
-    margin: 40px;
+    margin-right: 25px;
     text-align: left;
 }
 .portfolio-thumbnail {
     width: 500px;
     height: 375px;
-    background: #b3b3b3 0% 0% no-repeat padding-box;
+    background: #f3f3f3 0% 0% no-repeat padding-box;
     border-radius: 30px;
 }
 .portfolio-title {
@@ -185,9 +222,9 @@
 .start-btn {
     margin: auto;
     left: 785px;
-    width: 350px;
-    height: 60px;
-    background: #005fff 0% 0% no-repeat padding-box;
+    width: 190px;
+    height: 45px;
+    background: #01c1c6 0% 0% no-repeat padding-box;
     border-radius: 50px;
     color: #ffffff;
     display: flex;
@@ -197,5 +234,5 @@
 }
 
 .focus {
-    color: #005fff;
+    color: #01c1c6;
 }
