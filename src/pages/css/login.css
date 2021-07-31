@@ -161,3 +161,9 @@ p {
     width: 12px;
     height: 12px;
 }
+
+.google-login {
+    box-shadow: none !important;
+    text-align: center;
+    outline: none;
+}

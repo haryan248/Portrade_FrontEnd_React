@@ -46,7 +46,7 @@ const Header = () => {
             </div>
 
             <div className="nav-bar">
-                {isLogin ? <GoogleLogout buttonText="로그아웃" onLogoutSuccess={() => onLogoutSuccess()} clientId="988674118538-gog8quj6fimubp2b8dc6jhecui5e88cd.apps.googleusercontent.com" /> : <Link to="/login">로그인</Link>}
+                {isLogin ? <GoogleLogout buttonText="로그아웃" onLogoutSuccess={() => onLogoutSuccess()} clientId="988674118538-gog8quj6fimubp2b8dc6jhecui5e88cd.apps.googleusercontent.com" className="google-logout"/> : <Link to="/login">로그인</Link>}
                 {isLogin ? <Link to="/mypage">마이페이지</Link> : <Link to="/register">회원가입</Link>}
             </div>
         </header>
