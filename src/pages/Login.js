@@ -11,6 +11,7 @@ const Login = ({ history }) => {
 
     const onSuccessGoogle = (res) => {
         dispatch(ActionCreators.login(res.isSignedIn(), res.Zb.access_token, res.profileObj.email));
+        window.sessionStorage.setItem("access_token", res.Zb.access_token);
         history.replace("/");
     }
 
