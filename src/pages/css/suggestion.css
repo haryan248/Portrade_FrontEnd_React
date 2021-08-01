@@ -1,0 +1,45 @@
+.suggestion-header {
+    margin: 184px 0 0 395px;
+    width: 450px;
+}
+
+.suggestion-header p {
+    margin: 0;
+    color: #707070;
+    margin-bottom: 10px;
+}
+
+.suggestion-header p:first-child {
+    font-size: 50px;
+    line-height: 55px;
+    font: normal normal normal 50px/55px AppleSDGothicNeoEB00;
+}
+
+.suggestion-header p:nth-child(2) {
+    line-height: 25px;
+}
+
+.suggestion-header p:last-child {
+    font-size: 15px;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+    cursor: pointer;
+}
+
+.company-list {
+    margin: 167px 315px 94px 315px;
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+
+.company {
+    width: 332px;
+    height: 332px;
+    background-color: #E9E9E940;
+}
+
+.focus-company {
+    width: 590px;
+    height: 400px;
+    background-color: #E9E9E9;
+}
