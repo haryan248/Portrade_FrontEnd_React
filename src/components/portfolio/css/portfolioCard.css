@@ -1,0 +1,42 @@
+.card-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 413px;
+    height: 417px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 309px;
+    margin-bottom: 21px;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+}
+
+.card p {
+    margin: 0;
+    margin-left: 19px;
+}
+
+.portfolio-title {
+    font-size: 20px;
+    font: normal normal normal 20px/25px AppleSDGothicNeoB00;
+    margin-bottom: 6px;
+}
+
+.portfolio-author,
+.upload-date {
+    font-size: 15px;
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+    margin-bottom: 16px;
+}
+
+.upload-date {
+    margin: 0;
+}
