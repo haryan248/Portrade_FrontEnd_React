@@ -1,76 +1,71 @@
-p {
-    margin: 0px;
-}
-.login-container {
-    width: 100%;
-    text-align: center;
-}
-.left-text {
-    text-align: left;
+.login-box {
+    display: flex;
 }
 
-.logo-text {
+.login-box * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-left-box,
+.login-right-box {
+    height: 100vh;
+    background-color: #0000006b;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-left-box * {
+    width: 478px;
+}
+
+.login-logo-text {
     font: normal normal normal 50px/72px AppleSDGothicNeoEB00;
     color: #01c1c6;
     margin-bottom: 70px;
 }
 
-.login-box {
-    display: flex;
-}
-
-.left-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vh;
-    height: 100vh;
-    background-color: #0000006b;
-}
-
-.intro-text {
+.login-intro-text {
     font: normal normal normal 35px/50px AppleSDGothicNeoSB00;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 50px;
 }
 
-.slogan-text {
+.login-slogan-text {
     font: normal normal normal 15px/25px AppleSDGothicNeoM00;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
-.more-info-text {
+.login-more-info-text {
     font: normal normal normal 13px/45px AppleSDGothicNeoM00;
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 50px;
 }
 
-.btn-register {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login-btn-register {
     color: #487498;
-    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
-    top: 719px;
-    left: 230px;
-    width: 451px;
     height: 45px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background-color: #ffffff;
     box-shadow: 0px 2px 5px #00000033;
     border-radius: 10px;
-    opacity: 1;
+    text-align: center;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+    line-height: 45px;
 }
 
-.right-box {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+.login-right-box {
+    background-color: #ffffff;
+    flex: 4;
 }
 
-.login-content {
-    text-align: left;
+.login-right-box > div,
+.login-right-box > fieldset {
+    width: 440px;
 }
 
 .login-text {
@@ -81,17 +76,32 @@ p {
 .login-intro {
     font: normal normal normal 15px/25px AppleSDGothicNeoR00;
     color: #000000;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 }
 
-.btn-oauth {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 2px 5px #00000029;
-    border: 1px solid #c9c9c9;
+.google-login {
+    box-shadow: 0px 2px 5px #00000029 !important;
+    border: 1px solid #c9c9c9 !important;
+    outline: none;
+    width: 440px;
+    height: 45px;
+    display: flex !important;
+    justify-content: center;
+    box-sizing: border-box;
     border-radius: 5px;
-    text-align: center;
     font: normal normal normal 15px/38px AppleSDGothicNeoSB00;
     color: #999999;
+}
+
+.google-login > div {
+    width: 28px;
+    height: 32px;
+    padding: 0 !important;
+}
+
+.google-login > span {
+    padding: 0;
+    line-height: 45px;
 }
 
 .login-or-text {
@@ -100,70 +110,80 @@ p {
     font: normal normal normal 15px/38px AppleSDGothicNeoR00;
     letter-spacing: 0px;
     color: #c6c6c6;
+    background: linear-gradient(#ffffff 45%, #C6C6C6 45% 48%, #ffffff 48%);
+    margin-bottom: 11px;
 }
 
-.login-wrap {
-    margin: auto;
+.login-or-text span {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 40px;
 }
 
-.input-text {
-    text-align: left;
+.login-fieldset {
+    box-shadow: 0px 2px 5px #00000029;
+    border: 1px solid #C9C9C9;
+    border-radius: 5px;
+    margin-bottom: 29px;
+}
+
+.login-fieldset legend {
     font: normal normal normal 13px/38px AppleSDGothicNeoR00;
     letter-spacing: 0px;
     color: #999999;
+    text-align: left;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 24px;
 }
 
 .login-input {
-    top: 512px;
-    left: 1165px;
-    width: 440px;
-    height: 45px;
-    border: 1px solid #c9c9c9;
-    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font: normal normal normal 13px/38px AppleSDGothicNeoR00;
+    padding-left: 24px;
 }
 
 .btn-login {
-    margin-top: 15px;
+    margin-top: 2px;
     margin-bottom: 17px;
-    top: 669px;
-    left: 1165px;
-    width: 439px;
     height: 45px;
     background: #22334d 0% 0% no-repeat padding-box;
     border-radius: 10px;
     box-shadow: 0px 2px 5px #00000033;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font: normal normal normal 15px/38px AppleSDGothicNeoB00;
     color: #ffffff;
+    line-height: 45px;
+    cursor: pointer;
 }
 
-.btn-option {
+.login-option {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    letter-spacing: 0px;
 }
 
-.save-info {
+.login-option > div {
+    height: 15px;
+    display: flex;
+}
+
+.login-info-save,
+.login-find-pw {
     font: normal normal normal 12px/38px AppleSDGothicNeoR00;
     color: #000000;
+    border: none;
+    width: fit-content;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 12px;
+    cursor: pointer;
 }
 
-.find-passwd {
-    font: normal normal normal 13px/38px AppleSDGothicNeoB00;
+.login-find-pw {
+    font: normal normal normal 12px/38px AppleSDGothicNeoB00;
     color: #0ac3c8;
-}
-
-.checkbox {
-    width: 12px;
-    height: 12px;
-}
-
-.google-login {
-    box-shadow: none !important;
-    text-align: center;
-    outline: none;
+    line-height: 15px;
 }
