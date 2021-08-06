@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./css/my-page.css";
+import "./css/myPage.css";
 
 const Mypage = () => {
     return (
