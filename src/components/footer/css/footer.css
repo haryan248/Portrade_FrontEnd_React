@@ -8,15 +8,48 @@ footer {
     background-color: #8a8a8a;
     padding: 20px;
 }
+.footer-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
 .footer-logo {
     font: normal normal normal 15px/23px AppleSDGothicNeoEB00;
     color: #000000;
+    margin-right: 458px;
 }
 .footer-nav-bar {
     display: flex;
     font: normal normal normal 10px/13px AppleSDGothicNeoM00;
     color: #eaeaea;
+    margin-top: 28px;
 }
 .footer-nav-bar a {
     padding-right: 10px;
+}
+
+.footer-contact {
+    margin-left: 458px;
+}
+
+.footer-contact p {
+    text-align: left;
+    font: normal normal normal 15px/35px AppleSDGothicNeoSB00;
+    letter-spacing: 0px;
+    color: #eaeaea;
+    margin-bottom: 17px;
+}
+
+.footer-contact-box-wrap {
+    display: flex;
+}
+
+.footer-contact-box {
+    top: 4002px;
+    left: 1305px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 0% 0% no-repeat padding-box;
+    border: 1px solid #70707000;
+    opacity: 1;
 }
