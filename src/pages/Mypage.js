@@ -1,109 +1,76 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { InsertPortfolio, MyPortfolio} from "../components/mypage";
 import "./css/myPage.css";
 
 const Mypage = () => {
     return (
-        <div className="myPage-container">
-            <div className="ProfileBanner-root Profile-banner">
-                <div className="ProfileBanner-promptContainer">
-                    <div className="ProfileBanner-prompt"></div>
-                </div>
-            </div>
-            <div className="Profile-root">
-                <div className="Profile-wrap">
-                    {/* 프로필 카드 */}
-                    <div className="ProfileCard-root">
-                        <div className="ProfileCard-header">
-                            <div className="Avatar-container">
-                                <div className="ProfileAddStoryButton-container">
-                                    <div className="AddStoryButton-addStoryIcon"></div>
-                                </div>
-                            </div>
-                            <h1 className="ProfileCard-userFullName">홍길동</h1>
-                            <div className="ProfileCard-userDetails">사용자 소속 및 구직 상태</div>
+        <div className="mypage-container">
+            <p className="mypage-desc">여러분만의 개성을 넣어보세요. 헤더 최적 치수 1920 x 300</p>
+            
+            <div className="mypage-wrap">
+                {/* 프로필 카드 */}
+                <div className="mypage-profile-card">
+                    <div className="mypage-profile-card-header">
+                        <div className="mypage-avatar-container">
+                            <div className="mypage-add-story-icon"></div>
                         </div>
 
-                        <div className="ProfileCard-userInteractions">
-                            <div className="ProfileCard-interactionButton">
-                                <div>
-                                    <div className="ProfileCard-buttonLabel">내 프로필 편집</div>
-                                </div>
-                            </div>
-                            <div className="ProfileCard-interactionButton">
-                                <div className="ProfileCard-buttonLabel">
-                                    <div> 구직 상태 편집 </div>
-                                </div>
-                            </div>
-                            <div className="ProfileCard-interactionButton">
-                                <div className="ProfileCard-buttonLabel">
-                                    <div>포트폴리오 관리 </div>
-                                </div>
-                            </div>
-                            <div className="ProfileCard-interactionButton">
-                                <div className="ProfileCard-signUpDate">멤버 가입일 : 2021년 1월 1일</div>
-                            </div>
-                        </div>
+                        <p className="mypage-user-name">홍길동</p>
+                        <p className="mypage-user-details">사용자 소속 및 구직 상태</p>
                     </div>
-                    {/* 프로필 컨텐츠 */}
-                    <div className="Profile-profileContents">
-                        <ul className="Profile-tabControl Profile-tabsWithBannerWithoutFeatures">
-                            <li className="Profile-tab">
-                                <Link to="" className="Profile-anchor">
-                                    포트폴리오 등록
-                                </Link>
-                            </li>
-                            <li className="Profile-tab">
-                                <Link to="" className="Profile-anchor">
-                                    나의 포트폴리오
-                                </Link>
-                            </li>
-                            <li className="Profile-tab">
-                                <Link to="" className="Profile-anchor">
-                                    평가
-                                </Link>
-                            </li>
-                            <li className="Profile-tab">
-                                <Link to="" className="Profile-anchor">
-                                    저장된 항목
-                                </Link>
-                            </li>
-                            <li className="Profile-tab">
-                                <Link to="" className="Profile-anchor">
-                                    구독관리
-                                </Link>
-                            </li>
-                        </ul>
-                        <div className="Profile-tabs">
-                            <div className="Profile-tab">
-                                <div>
-                                    <div className="Work">
-                                        <div className="portfolioAddContent-info">
-                                            <div className="portfolioAddContent-card">
-                                                <div className="portfolioAddContent-wrapper">
-                                                    <div className="box">
-                                                        <div className="portfolioAddContent-card__item">
-                                                            <div className="portfolioAddContent-icon-wrapper">
-                                                                <div className="portfolioAddContent-icon"></div>
-                                                            </div>
-                                                            <div className="addPortfolio-wrapper">
-                                                                <div className="addPortfolio-button">
-                                                                    <div className="addPortfolio">포트폴리오 등록</div>
-                                                                </div>
-                                                            </div>
-                                                            <p className="paragraph">
-                                                                피드백, 조회수 및 평가를 받아 보십시오.<br></br> 공개 프로젝트는 당사의 큐레이터가 추천해 드릴 수 있습니다.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <p className="mypage-profile-button-label">내 프로필 편집</p>
+                    <p className="mypage-profile-button-label">구직 상태 편집</p>
+                    <p className="mypage-profile-button-label">포트폴리오 관리</p>
+
+                    <p className="mypage-signup-date">멤버 가입일 : 2021년 1월 1일</p>
+                </div>
+
+                {/* 프로필 컨텐츠 */}
+                <div className="mypage-profile-contents">
+                    <p className="mypage-profile-contents-header">나의 인사이트</p>
+                    <table className="mypage-profile-history">
+                        <thead>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>포트폴리오 열람</td>
+                                <td>프로젝트 평가</td>
+                                <td>프로젝트 댓글</td>
+                                <td>팔로우</td>
+                                <td>팔로워</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul className="mypage-profile-tab-control">
+                        <li className="mypage-profile-tab">
+                            <Link to="">포트폴리오 등록</Link>
+                        </li>
+                        <li className="mypage-profile-tab">
+                            <Link to="">나의 포트폴리오</Link>
+                        </li>
+                        <li className="mypage-profile-tab">
+                            <Link to="">평가</Link>
+                        </li>
+                        <li className="mypage-profile-tab">
+                            <Link to="">저장된 항목</Link>
+                        </li>
+                        <li className="mypage-profile-tab">
+                            <Link to="">구독관리</Link>
+                        </li>
+                    </ul>
+                    
+                    <InsertPortfolio/>
+                    <MyPortfolio/>
                 </div>
             </div>
         </div>

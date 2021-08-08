@@ -1,0 +1,28 @@
+.mypage-my-portfolio-wrap {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mypage-portfolio {
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(#6F6F6F8C 0%, #FFFFFF00 100%);
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.mypage-portfolio p {
+    margin: 0;
+}
+
+.mypage-portfolio p:first-child {
+    font: normal normal normal 15px/25px AppleSDGothicNeoB00;
+}
+
+.mypage-portfolio p:last-child {
+    color: #8B8B8B;
+    font: normal normal normal 12px/25px AppleSDGothicNeoM00;
+}
