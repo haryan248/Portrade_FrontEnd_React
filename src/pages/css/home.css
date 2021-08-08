@@ -4,6 +4,9 @@
     margin-top: 60px;
 }
 .home-slide-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 450px;
     background: #487498 0% 0% no-repeat padding-box;
@@ -32,7 +35,7 @@
     border-radius: 40px;
     color: #ffffff;
 }
-.home-corporate {
+.home-corporate-wrap {
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -41,8 +44,14 @@
     width: 300px;
     height: 200px;
     margin-right: 30px;
+    margin-bottom: 20px;
     background: #f3f3f3 0% 0% no-repeat padding-box;
     border-radius: 25px;
+}
+
+.home-newsfeed {
+    text-align: left;
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
 }
 
 .home-about-box {
@@ -85,12 +94,13 @@
 
 .home-about-desc {
     font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+    margin-bottom: 30px;
 }
 .home-about-subtitle {
     font: normal normal normal 25px/38px AppleSDGothicNeoM00;
 }
+
 .home-detail-btn {
-    margin: auto;
     width: 170px;
     height: 45px;
     font: normal normal normal 15px/38px AppleSDGothicNeoB00;
@@ -188,6 +198,7 @@
 }
 .home-portfolio-list {
     display: flex;
+    justify-content: center;
 }
 .home-portfolio {
     margin-right: 25px;
@@ -198,12 +209,14 @@
     height: 375px;
     background: #f3f3f3 0% 0% no-repeat padding-box;
     border-radius: 30px;
+    margin-bottom: 15px;
 }
 .home-portfolio-title {
     font: normal normal normal 20px/25px AppleSDGothicNeoB00;
 }
 .home-portfolio-username {
     font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+    margin-bottom: 30px;
 }
 .home-portfolio-time {
     font: normal normal normal 15px/25px AppleSDGothicNeoM00;
@@ -211,7 +224,7 @@
 .home-start-box {
     background-color: #f3f3f3;
     color: #707070;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     padding: 100px;
     margin-top: 100px;
 }
@@ -237,4 +250,39 @@
 
 .home-focus {
     color: #01c1c6;
+}
+
+.home-info-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.home-info-content {
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.home-info-content p {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.home-info-content p:first-child {
+    font: normal normal normal 20px/35px AppleSDGothicNeoM00;
+    margin-bottom: 3px;
+}
+
+.home-info-content p:last-child {
+    font: normal normal normal 15px/28px AppleSDGothicNeoM00;
+}
+
+.home-info-line {
+    top: 3828px;
+    left: 315px;
+    width: 588px;
+    height: 0px;
+    border: 1px solid #707070;
+    opacity: 1;
 }
