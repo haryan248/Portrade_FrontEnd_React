@@ -1,0 +1,55 @@
+.mypage-insert-portfolio-box {
+    padding: 23px 0;
+    background-color: #F9F9F9;
+    border: 0.5px solid #bebebe;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.mypage-portfolio-addContent-icon-wrapper {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 73px;
+    height: 73px;
+    background-color: #0AC3C840;
+    border-radius: 999px;
+    padding: 18px;
+}
+
+.mypage-portfolio-addContent-icon {
+    background-color: #0AC3C8;
+    border-radius: 50%;
+    height: 37px;
+    width: 37px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    font: normal normal normal 30px/42px AppleSDGothicNeoM00;
+}
+
+.mypage-addPortfolio-content {
+    font: normal normal normal 12px/30px AppleSDGothicNeoSB00;
+    line-height: 30px;
+    background-color: #FFFFFF;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.portfolioAddContent-card__item .addPortfolio-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 30px;
+}
+
+.paragraph {
+    width: 290px;
+    margin: 0 auto;
+    text-align: center;
+    font: normal normal normal 12px/20px AppleSDGothicNeoM00;
+}
