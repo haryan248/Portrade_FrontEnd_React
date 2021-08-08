@@ -25,21 +25,28 @@
     cursor: pointer;
 }
 
-.company-list {
+.suggestion-company-list {
     margin: 167px 315px 94px 315px;
     display: flex;
-    height: 400px;
     align-items: center;
+    justify-content: center;
+    height: 400px;
 }
 
 .company {
     width: 332px;
     height: 332px;
-    background-color: #E9E9E940;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e940;
 }
 
 .focus-company {
     width: 590px;
     height: 400px;
-    background-color: #E9E9E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9e9e9;
 }
