@@ -1,0 +1,154 @@
+.register-box {
+    display: flex;
+}
+
+.register-box * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register-left-box,
+.register-right-box {
+    height: 100vh;
+    background-color: #0000006b;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-right-box * {
+    width: 478px;
+}
+
+.register-logo-text {
+    font: normal normal normal 50px/72px AppleSDGothicNeoEB00;
+    color: #01c1c6;
+    margin-bottom: 70px;
+}
+
+.register-intro-text {
+    font: normal normal normal 35px/50px AppleSDGothicNeoSB00;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.register-slogan-text {
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.register-more-info-text {
+    font: normal normal normal 13px/45px AppleSDGothicNeoM00;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+.register-left-box {
+    background-color: #ffffff;
+    flex: 2;
+}
+
+.register-left-box > div,
+.register-left-box > fieldset {
+    width: 440px;
+}
+
+.register-text {
+    color: #487498;
+    font: normal normal normal 40px/57px AppleSDGothicNeoEB00;
+}
+
+.register-intro {
+    font: normal normal normal 15px/25px AppleSDGothicNeoR00;
+    color: #000000;
+    margin-bottom: 27px;
+}
+
+.register-fieldset {
+    box-shadow: 0px 2px 5px #00000029;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.register-fieldset legend {
+    font: normal normal normal 13px/38px AppleSDGothicNeoR00;
+    letter-spacing: 0px;
+    color: #999999;
+    text-align: left;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 24px;
+}
+
+.register-input {
+    border: none;
+    border-bottom: 0 0 1px 0;
+    border-bottom-style: solid;
+    border-block-color: #c9c9c9;
+    border-bottom-width: 1px;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    font: normal normal normal 13px/38px AppleSDGothicNeoR00;
+    padding-left: 24px;
+}
+.password-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}
+
+.password-option > div {
+    height: 15px;
+    display: flex;
+}
+.password-info {
+    font: normal normal normal 12px/20px AppleSDGothicNeoSB00;
+    color: #000000;
+    border: none;
+    width: fit-content;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.agree-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}
+.login-info-agree,
+.login-agree-content {
+    font: normal normal normal 12px/20px AppleSDGothicNeoSB00;
+    color: #000000;
+    border: none;
+    width: fit-content;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.btn-register {
+    margin-top: 2px;
+    margin-bottom: 17px;
+    height: 45px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 5px #00000033;
+    border-radius: 10px;
+    border: 1px solid #22334d;
+    text-align: center;
+    font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+    color: #22334d;
+    line-height: 45px;
+    cursor: pointer;
+}
