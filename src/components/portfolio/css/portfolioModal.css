@@ -1,0 +1,100 @@
+/* 모달 */
+@keyframes modal-show {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes modal-bg-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #00000080;
+}
+.modal button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+.modal > .portfolioModal-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    animation: modal-show 0.3s;
+    height: max-content;
+    max-height: 80%;
+    overflow: hidden;
+}
+.portfolioModal-header {
+    position: relative;
+    padding: 16px 64px 16px 16px;
+    background-color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* .portfolioModal-header button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+} */
+.portfolioModal-header-rightContent {
+    display: flex;
+    flex-direction: row;
+}
+.portfolioModal-content {
+    padding: 16px;
+    border-bottom: 1px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    overflow: scroll;
+}
+.portfolioModal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolioModal-imgContainer {
+    height: 1900px;
+    background-color: antiquewhite;
+}
+
+.portfolioModal-closeButton {
+    cursor: pointer;
+    height: 20px;
+    padding: 5px;
+    /* position: fixed; */
+    right: 8px;
+    top: 8px;
+    width: 17px;
+}
+.modal.openModal {
+    display: flex;
+    align-items: center;
+    /* 팝업이 열릴때 스르륵 열리는 효과 */
+    animation: modal-bg-show 0.3s;
+}

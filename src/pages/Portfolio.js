@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PortfolioCard from "../components/portfolio/PortfolioCard";
+import PortfolioModal from "../components/portfolio/PortfolioModal";
 
 import "./css/portfolio.css";
 
@@ -24,6 +25,22 @@ const Portfolio = () => {
         { id: 9, text: "기타 소분야" },
     ]);
 
+    const [portfolio, setPortfolio] = useState([
+        { id: 1, name: "추천 포트폴리오", detail: "포트폴리오 더보기" },
+        { id: 2, name: "최신 포트폴리오", detail: "포트폴리오 더보기" },
+    ]);
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModal = () => {
+        setIsModalOpen(!isModalOpen);
+        // 모달 오버레이에서 스크롤 방지
+        if (!isModalOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+    };
     const PortfolioButtonList = name.map((name) => (
         <div className="portfolio-options-button" key={name.id}>
             {name.text}
@@ -42,6 +59,19 @@ const Portfolio = () => {
         </span>
     ));
 
+    const PortfolioList = portfolio.map((portfolio) => (
+        <div className="portfolio-suggestion" key={portfolio.id}>
+            <div className="section-header">
+                <p className="portfolio-section-name">{portfolio.name}</p>
+                <p className="portfolio-section-detail">{portfolio.detail}</p>
+            </div>
+            <div onClick={handleModal}>
+                <PortfolioCard />
+            </div>
+            <PortfolioModal openModal={isModalOpen} handleModal={handleModal} />
+        </div>
+    ));
+
     return (
         <>
             <div className="portfolio-header">
@@ -50,8 +80,7 @@ const Portfolio = () => {
                         어떤 분야의 <br /> 포트폴리오를 등록하시나요?
                     </p>
                     <p>
-                        포트레이트는 다양한 분야의 포트폴리오를 등록 할 수
-                        있습니다.
+                        포트레이트는 다양한 분야의 포트폴리오를 등록 할 수 있습니다.
                         <br />
                         여러분의 개성 넘치는 포트폴리오를 등록해보세요.
                     </p>
@@ -71,34 +100,14 @@ const Portfolio = () => {
                     <input type="checkbox" id="lookup" />
                 </form>
 
-                <div className="portfolio-options-button-wrap">
-                    {PortfolioButtonList}
-                </div>
+                <div className="portfolio-options-button-wrap">{PortfolioButtonList}</div>
             </div>
-            <div className="portfolio-suggestion">
-                <div className="section-header">
-                    <p className="portfolio-section-name">추천 포트폴리오</p>
-                    <p className="portfolio-section-detail">
-                        포트폴리오 더보기
-                    </p>
-                </div>
-                <PortfolioCard />
-            </div>
-            <div className="portfolio-latest">
-                <div className="section-header">
-                    <p className="portfolio-section-name">최신 포트폴리오</p>
-                    <p className="portfolio-section-detail">
-                        포트폴리오 더보기
-                    </p>
-                </div>
-                <PortfolioCard />
-            </div>
+            <div>{PortfolioList}</div>
+
             <div className="portfolio-category">
                 <div className="portfolio-category-header">
                     <p>분야별 포트폴리오 탐색</p>
-                    <div className="portfolio-category-button-wrap">
-                        {CategoryButtonList}
-                    </div>
+                    <div className="portfolio-category-button-wrap">{CategoryButtonList}</div>
                 </div>
                 <div className="portfolio-category-desc">
                     <p className="portfolio-section-name">분야별 포트폴리오</p>
@@ -111,7 +120,6 @@ const Portfolio = () => {
                         <div>{CategoryList}</div>
                         <p className="portfolio-section-detail">더보기</p>
                     </div>
-
                     <PortfolioCard />
                     <PortfolioCard />
                 </div>
