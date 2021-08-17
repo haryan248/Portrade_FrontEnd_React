@@ -2,11 +2,11 @@
 @keyframes modal-show {
     from {
         opacity: 0;
-        transform: translateY(-100px);
+        transform: translate(-50%, -20%);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
 }
 @keyframes modal-bg-show {
@@ -21,11 +21,13 @@
 .modal {
     display: none;
     position: fixed;
+    overflow: scroll;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 99;
+    z-index: 102;
+    height: 100vh;
     background-color: #00000080;
 }
 .modal button {
@@ -36,43 +38,41 @@
 .modal > .portfolioModal-wrapper {
     width: 90%;
     margin: 0 auto;
-    border-radius: 0.3rem;
-    background-color: #fff;
     animation: modal-show 0.3s;
     height: max-content;
-    max-height: 80%;
-    overflow: hidden;
+    position: absolute;
+    box-sizing: border-box;
+    top: 80px;
+    left: 50%;
+    padding-bottom: 80px;
+    transform: translate(-50%, 0);
 }
 .portfolioModal-header {
     position: relative;
     padding: 16px 64px 16px 16px;
-    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
     font-weight: 700;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #ffffff;
 }
-/* .portfolioModal-header button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    font-size: 21px;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-    background-color: transparent;
-} */
+.portfolioModal-header-title {
+    font: normal normal normal 25px/25px AppleSDGothicNeoB00;
+}
+.portfolioModal-header-date {
+    font: normal normal normal 15px/25px AppleSDGothicNeoSB00;
+}
 .portfolioModal-header-rightContent {
     display: flex;
     flex-direction: row;
 }
 .portfolioModal-content {
-    padding: 16px;
-    border-bottom: 1px solid #dee2e6;
     border-top: 1px solid #dee2e6;
     overflow: scroll;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
 }
 .portfolioModal-content::-webkit-scrollbar {
     display: none;
@@ -82,7 +82,29 @@
     height: 1900px;
     background-color: antiquewhite;
 }
-
+.portfolioModal-button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.portfolioModal-likeButton,
+.portfolioModal-saveButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    width: 100px;
+    height: 20px;
+    background: #01c1c6 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    padding: 15px 60px;
+    text-align: center;
+    font: normal normal normal 20px/25px AppleSDGothicNeoM00;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
 .portfolioModal-closeButton {
     cursor: pointer;
     height: 20px;
@@ -91,6 +113,123 @@
     right: 8px;
     top: 8px;
     width: 17px;
+}
+.portfolioModal-profile-content {
+    padding: 60px;
+}
+.portfolioModal-profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.portfolioModal-profile-desc {
+    margin-right: 20px;
+}
+.portfolioModal-profile-Avatar {
+    width: 65px;
+    height: 65px;
+    background: #487498 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.portfolioModal-profile-name {
+    font: normal normal normal 20px/25px AppleSDGothicNeoB00;
+}
+.portfolioModal-profile-state {
+    font: normal normal normal 15px/25px AppleSDGothicNeoB00;
+}
+.portfolioModal-profile-followButton {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: #01c1c6 0% 0% no-repeat padding-box;
+    font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+    color: #ffffff;
+    align-items: center;
+}
+.portfolioModal-portfolioCardList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.portfolioModal-portfolioCard {
+    width: 413px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.portfolioModal-thumbnail {
+    width: 100%;
+    height: 309px;
+    margin-bottom: 21px;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+}
+.portfolioModal-portfolioComment-content {
+    padding: 0 100px 60px 100px;
+}
+.portfolioModal-writeComment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #c2c2c2;
+}
+.portfolioModal-writeComment-profile {
+    width: 60px;
+    height: 60px;
+    background: #487498 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.portfolioModal-comment-text-content,
+.portfolioModal-writeInput {
+    flex: 1;
+}
+.portfolioModal-InputField {
+    height: 91px;
+    width: 100%;
+    font: normal normal normal 13px/38px AppleSDGothicNeoR00;
+}
+.portfolioModal-submitButton {
+    width: 80px;
+    height: 91px;
+    margin-left: 40px;
+    background: #487498 0% 0% no-repeat padding-box;
+}
+.portfolioModal-commentList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 0.5px solid #c2c2c2;
+}
+.portfolioModal-comment {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.portfolioModal-comment-profile {
+    width: 60px;
+    height: 60px;
+    background: #487498 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.portfolioModal-comment-moreButton {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #01c1c6;
+    font: normal normal normal 20px/25px AppleSDGothicNeoB00;
 }
 .modal.openModal {
     display: flex;

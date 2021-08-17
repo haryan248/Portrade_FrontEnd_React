@@ -68,7 +68,6 @@ const Portfolio = () => {
             <div onClick={handleModal}>
                 <PortfolioCard />
             </div>
-            <PortfolioModal openModal={isModalOpen} handleModal={handleModal} />
         </div>
     ));
 
@@ -103,6 +102,7 @@ const Portfolio = () => {
                 <div className="portfolio-options-button-wrap">{PortfolioButtonList}</div>
             </div>
             <div>{PortfolioList}</div>
+            <PortfolioModal openModal={isModalOpen} handleModal={handleModal} />
 
             <div className="portfolio-category">
                 <div className="portfolio-category-header">
