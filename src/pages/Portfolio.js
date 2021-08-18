@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PortfolioCard from "../components/portfolio/PortfolioCard";
 import PortfolioModal from "../components/portfolio/PortfolioModal";
 
@@ -41,11 +42,21 @@ const Portfolio = () => {
             document.body.style.overflow = "unset";
         }
     };
-    const PortfolioButtonList = name.map((name) => (
-        <div className="portfolio-options-button" key={name.id}>
-            {name.text}
-        </div>
-    ));
+    const PortfolioButtonList = name.map((name) => {
+        if(name.id === 1){
+            return (
+                <Link to="/portfolio/register" className="portfolio-options-button" key={name.id}>
+                    {name.text}
+                </Link>
+            )
+        }else {
+            return (
+                <div className="portfolio-options-button" key={name.id}>
+                    {name.text}
+                </div>
+            )
+        }
+    });
 
     const CategoryButtonList = category.map((category) => (
         <div className="portfolio-category-button" key={category.id}>
