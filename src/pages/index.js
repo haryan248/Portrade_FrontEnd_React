@@ -9,3 +9,4 @@ export { default as Mypage } from "./Mypage";
 export { default as Introduce } from "./Introduce";
 export { default as Notice } from "./Notice";
 export { default as FAQ } from "./FAQ";
+export { default as PortfolioRegister } from "./PortfolioRegister";

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
-import { Error, Home, Introduce, Login, Mypage, Help, Portfolio, Register, Suggestion, Notice, FAQ } from "./pages";
+import { Error, Home, Introduce, Login, Mypage, Help, Register, Suggestion, Notice, FAQ, Portfolio, PortfolioRegister } from "./pages";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import "./css/app.css";
@@ -23,6 +23,7 @@ const App = (props) => {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/portfolio/register" component={PortfolioRegister} />
                 <Route exact path="/suggestion" component={Suggestion} />
                 <Route exact path="/help" component={Help} />
                 <Route exact path="/login" component={Login} />
