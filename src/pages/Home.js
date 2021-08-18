@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/home.css";
 
 const Home = () => {
@@ -9,11 +10,37 @@ const Home = () => {
         { id: 4, text: "공지사항" },
         { id: 5, text: "문의하기" },
     ]);
-    const homeButtonList = buttons.map((button) => (
-        <div className="home-button" key={button.id}>
-            {button.text}
-        </div>
-    ));
+
+    const homeButtonList = buttons.map((button) => {
+        switch(button.id){
+            case 1:
+                return (
+                    <Link to="/portfolio/register" className="home-button" key={button.id}>
+                        {button.text}
+                    </Link>
+                );
+            case 4:
+                return (
+                    <Link to="/notice" className="home-button" key={button.id}>
+                        {button.text}
+                    </Link>
+                );
+            case 5:
+                return (
+                    <Link to="/FAQ" className="home-button" key={button.id}>
+                        {button.text}
+                    </Link>
+                );
+            default:
+                return (
+                    <div className="home-button" key={button.id}>
+                        {button.text}
+                    </div>
+                )
+
+        }
+    });
+
     return (
         <div className="home-container">
             <div className="home-slide-box">슬라이드</div>
