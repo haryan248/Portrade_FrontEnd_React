@@ -19,7 +19,7 @@ const Suggestion = () => {
                 <div className="company">추천 기업 예시</div>
             </div>
         </div>
-    );
+    ); 
 };
 
 export default Suggestion;

@@ -1,0 +1,194 @@
+.faq-wrap {
+  width: 100%;
+  margin-top: 87px;
+}
+
+.faq-board {
+  margin-left: 315px;
+  margin-right: 315px;
+}
+
+.faq-path {
+  margin-bottom: 43px;
+  font: normal normal normal 15px/21px AppleSDGothicNeoM00;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.faq-path span {
+  margin: 0px 30px 0px 30px;
+}
+
+.faq-post-wrap {
+  margin-left: 200px;
+}
+
+.faq-text p {
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 0px;
+}
+
+.faq-text p:first-child {
+  font: normal normal normal 40px/25px AppleSDGothicNeoB00;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+
+.faq-text p:last-child {
+  font: normal normal normal 40px/25px AppleSDGothicNeoB00;
+  letter-spacing: 0px;
+}
+
+.faq-text p:nth-child(2) {
+  text-align: left;
+  font: normal normal normal 20px/26px AppleSDGothicNeoM00;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.faq-text p:last-child {
+  text-align: left;
+  font: normal normal normal 20px/26px AppleSDGothicNeoM00;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+/* .faq-post-top {
+  top: 342px;
+  left: 535px;
+  width: 850px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+  border: 0.5px solid #707070;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
+}
+
+.faq-post-bottom {
+  top: 1125px;
+  left: 535px;
+  width: 850px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+  border: 0.5px solid #707070;
+  border-radius: 0px 0px 10px 10px;
+  opacity: 1;
+}
+} */
+
+.faq-post-block {
+  margin-bottom: 40px;
+}
+
+.faq-post-block span {
+  left: 535px;
+  width: 850px;
+  height: 60px;
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+  border: 0.5px solid #707070;
+  display: flex;
+  align-items: center;
+}
+
+.faq-post-block span:first-child {
+  top: 342px;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
+}
+
+.faq-post-block span:nth-child(2) {
+  top: 342px;
+  opacity: 1;
+}
+
+.faq-post-block span:last-child {
+  top: 1125px;
+  border-radius: 0px 0px 10px 10px;
+  opacity: 1;
+}
+
+.faq-post-text {
+  margin-left: 50px;
+  text-align: left;
+  font: normal normal normal 15px/25px AppleSDGothicNeoM00;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.faq-help-wrap {
+  top: 974px;
+  left: 0px;
+  width: 1920px;
+  height: 400px;
+  background: #E9E9E9 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.faq-help-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-help-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-help-text span:first-child {
+  font: normal normal normal 40px/55px AppleSDGothicNeoSB00;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.faq-help-text span:nth-child(2) {
+  font: normal normal normal 30px/45px AppleSDGothicNeoM00;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.faq-help-text span:nth-child(3) {
+  font: normal normal normal 30px/45px AppleSDGothicNeoM00;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.faq-help-btn {
+  margin-top: 45px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.faq-help-btn button {
+  top: 1251px;
+  left: 875px;
+  width: 170px;
+  height: 45px;
+  background: #22334D 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  outline: 0;
+  border:0
+}
+
+.faq-help-btn button:hover {
+  background: #5783c4;
+}
+
+.faq-help-btn p {
+  text-align: center;
+  margin: 0;
+  font: normal normal normal 15px/38px AppleSDGothicNeoB00;
+  letter-spacing: 0px;
+  color: #e4e4e4;
+}

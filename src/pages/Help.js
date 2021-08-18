@@ -1,12 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./css/help.css";
 
 const Help = () => {
     return (
         <div className="help-container">
-            <p className="help-question-text">포트레이드에 궁금하신 점이 있으신가요?</p>
-            <input className="help-question-box" type="text" placeholder="이 곳에 검색어를 입력하세요"/>
-            
+            <p className="help-question-text">
+                포트레이드에 궁금하신 점이 있으신가요?
+            </p>
+            <input
+                className="help-question-box"
+                type="text"
+                placeholder="이 곳에 검색어를 입력하세요"
+            />
+
             <div className="help-desc-container">
                 <div className="help-desc">
                     <p>회원 정보 관리</p>
@@ -25,7 +32,9 @@ const Help = () => {
                 <div className="help-notice">
                     <div className="help-notice-title">
                         <span>공지사항</span>
-                        <span>더보기</span>
+                        <span>
+                            <Link to="/notice">더보기</Link>
+                        </span>
                     </div>
                     <div className="help-notice-desc">
                         <p>포트레이트의 이용약관에 대해서 안내드립니다.</p>
@@ -39,7 +48,9 @@ const Help = () => {
                 <div className="help-notice">
                     <div className="help-notice-title">
                         <span>자주 묻는 질문</span>
-                        <span>더보기</span>
+                        <span>
+                            <Link to="/FAQ">더보기</Link>
+                        </span>
                     </div>
                     <div className="help-notice-desc">
                         <p>포트폴리오 업로드는 어떻게 하나요?</p>
