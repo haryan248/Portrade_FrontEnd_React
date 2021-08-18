@@ -1,8 +1,20 @@
 import React, { useState } from "react";
+import PortfolioUpload from "../components/portfolio/PortfolioUpload";
 
 import "./css/portfolioRegister.css";
 
 const PortfolioRegister = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleModal = () => {
+        setIsModalOpen(!isModalOpen);
+        if (!isModalOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+    };
+
     return (
         <div className="portfolioRegister-container">
             <p className="portfolioRegister-header">포트폴리오 등록하기</p>
@@ -40,7 +52,12 @@ const PortfolioRegister = () => {
                 </div>
             </div>
 
-            <div className="portfolioRegister-btn">다음 단계</div>
+            <button
+                className="portfolioRegister-btn"
+                onClick={handleModal}
+            >다음 단계</button>
+
+            <PortfolioUpload openModal={isModalOpen} handleModal={handleModal} />
         </div>
     );
 };
