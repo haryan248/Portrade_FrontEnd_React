@@ -128,18 +128,37 @@
     font: normal normal normal 15px/25px AppleSDGothicNeoM00;
 }
 
-.home-slogan-yellow {
+.home-slogan {
     display: flex;
     justify-content: center;
 }
-.home-slogan-yellow-box {
+.home-slogan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.home-slogan-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin: 20px;
+    padding: 30px;
     width: 400px;
-    height: 500px;
-    background-color: #f3f3f3;
+    height: 400px;
+    background-color: #fafafa;
+    box-shadow: 0px 3px 5px #00000029;
     border-radius: 25px;
 }
-
+.home-slogan-img {
+    width: 80%;
+}
+.home-slogan-text {
+    display: flex;
+    flex-direction: column;
+    font: normal normal normal 20px/33px AppleSDGothicNeoSB00;
+}
 .home-register-button {
     margin: 0 auto;
     margin-top: 64px;
