@@ -17,13 +17,13 @@ const Login = ({ history }) => {
     };
 
     const onSuccessGoogle = async (res) => {
-        // dispatch(ActionCreators.login(res.isSignedIn(), res.Zb.access_token, res.profileObj.email));
-        // window.sessionStorage.setItem("access_token", res.Zb.access_token);
-        let jwtToken = await Axios.post("http://ec2-3-38-6-25.ap-northeast-2.compute.amazonaws.com:8080/oauth/jwt/google", JSON.stringify(res), config);
-        if (jwtToken.status === 200) {
-            localStorage.setItem("jwtToken", jwtToken.data);
-            history.replace("/");
-        }
+        dispatch(ActionCreators.login(res.isSignedIn(), res.Zb.access_token, res.profileObj.email));
+        window.sessionStorage.setItem("access_token", res.Zb.access_token);
+        // let jwtToken = await Axios.post("http://ec2-3-38-6-25.ap-northeast-2.compute.amazonaws.com:8080/oauth/jwt/google", JSON.stringify(res), config);
+        // if (jwtToken.status === 200) {
+        //     localStorage.setItem("jwtToken", jwtToken.data);
+        //     history.replace("/");
+        // }
     };
 
     const onFailureGoogle = (err) => {

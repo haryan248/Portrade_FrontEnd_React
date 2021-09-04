@@ -43,7 +43,7 @@ const PortfolioRegister = () => {
                         <input type="text" placeholder="파일 찾아보기" />
                         <button className="options-btn">적용</button>
                     </div>
-                    
+
                     <div className="portfolioRegister-options-media">
                         <p className="portfolioRegister-options-header">미디어 임베드</p>
                         <input type="text" placeholder="파일 찾아보기" />
@@ -52,10 +52,9 @@ const PortfolioRegister = () => {
                 </div>
             </div>
 
-            <button
-                className="portfolioRegister-btn"
-                onClick={handleModal}
-            >다음 단계</button>
+            <button className="portfolioRegister-btn" onClick={handleModal}>
+                다음 단계
+            </button>
 
             <PortfolioUpload openModal={isModalOpen} handleModal={handleModal} />
         </div>
