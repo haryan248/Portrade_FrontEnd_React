@@ -1,8 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+
 import "./css/home.css";
 
 const Home = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        pauseOnHover: false,
+        autoplaySpeed: 3000,
+        fade: true,
+        cssEase: "linear",
+    };
     const [buttons, setNames] = useState([
         { id: 1, text: "포트폴리오 등록하기" },
         { id: 2, text: "분야별 포트폴리오" },
@@ -16,7 +29,24 @@ const Home = () => {
         { id: 2, imgUrl: require("../images/home/slogan_2.png").default, text: "포트폴리오 업로드" },
         { id: 3, imgUrl: require("../images/home/slogan_3.png").default, text: "설명과 세부 내용 추가 및 SNS 연동" },
     ]);
-
+    const [carousels, setCarousels] = useState([
+        {
+            id: 1,
+            imgUrl: require("../images/home/main_image_1.png").default,
+            bgColor: "#76ABE7",
+            textColor: "#FFFFFF",
+            title: "포트레이드는 <br/> 간편한 포트폴리오 등록",
+            detail: "누구에게나 손쉽고,<br/>누구에게나 편리하게<br/>포트폴리오를 등록하실 수 있습니다.",
+        },
+        {
+            id: 2,
+            imgUrl: require("../images/home/main_image_2.png").default,
+            bgColor: "#FFD5D5",
+            textColor: "#000000",
+            title: "포트레이드는 더 나은 미래와<br/> 청년의 성장을 위해 노력합니다.",
+            detail: "분야와 상관 없이 청년들의 꿈을 이룰 수 있도록,<br/>포트레이트는 여러분을 도와드립니다.",
+        },
+    ]);
     const homeButtonList = buttons.map((button) => {
         switch (button.id) {
             case 1:
@@ -58,9 +88,24 @@ const Home = () => {
         </div>
     ));
 
+    const CarouselList = carousels.map((carousel) => (
+        <div key={carousel.id}>
+            <div className="home-carousel-box" style={{ backgroundColor: carousel.bgColor }}>
+                <div className="home-carousel-container">
+                    <div style={{ color: carousel.textColor }}>
+                        <div className="home-carousel-title" dangerouslySetInnerHTML={{ __html: carousel.title }}></div>
+                        <div className="home-carousel-detail" dangerouslySetInnerHTML={{ __html: carousel.detail }}></div>
+                    </div>
+                    <img className="home-carousel-img" src={carousel.imgUrl}></img>
+                </div>
+            </div>
+        </div>
+    ));
     return (
         <div className="home-container">
-            <div className="home-slide-box">슬라이드</div>
+            <div className="home-slide-box">
+                <Slider {...settings}>{CarouselList}</Slider>
+            </div>
             <div className="home-homeTop-button">{homeButtonList}</div>
             <div className="home-corporate-wrap">
                 <div className="home-corporate">
@@ -104,7 +149,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
             <div className="home-about-box">
                 <div className="home-about-yellow-box"></div>
 
@@ -124,7 +168,6 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-
             <div className="home-howTo-box">
                 <div className="home-howTo-title">How To?</div>
                 <div className="home-howTo-desc">포트폴리오 등록은 어떻게 진행되나요?</div>
@@ -133,7 +176,6 @@ const Home = () => {
                     <div>여러분의 개성넘치는 포트폴리오를 업로드 해보세요.</div>
                 </div>
             </div>
-
             <div className="home-slogan">{SloganList}</div>
             <Link to="/portfolio/register">
                 <div className="home-register-button">등록하기</div>
@@ -160,7 +202,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
             <div className="home-portfolio-content">
                 <div className="home-portfolio-nav">포트폴리오</div>
                 <div className="home-portfolio-list">
@@ -184,7 +225,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
             <div className="home-start-box">
                 <div className="home-description">
                     <div>커리어 성장의 여정을 포트레이트에서 시작해보세요.</div>
@@ -194,7 +234,6 @@ const Home = () => {
                     <div>지금 시작하기</div>
                 </div>
             </div>
-
             <div className="home-info-wrap">
                 <div className="home-info-content">
                     <p>NOTICE</p>
